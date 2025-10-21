@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Den Designs Studios</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- RESET --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #4b4b49;
+      background-color: rgb(247, 245, 245);
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      background: linear-gradient(90deg, #585855, #322f2a, #f1efe3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header a {
+      color: #f1f1e9;
+      text-decoration: none;
+      border: 1px solid #565551;
+      padding: 5px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: #21201d;
+      color: black;
+    }
+
+    /* --- LANDING --- */
+    .landing {
+      background: url("Capture d'écran 2025-09-09 185827.png") no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .landing h2 {
+      font-size: 4rem;
+      font-family: 'Cinzel Decorative', cursive;
+      background: linear-gradient(90deg, #e8e7e4, #838382, #FFF8DC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 15px #f1efef;
+    }
+
+    .btn {
+      border: 2px solid #e6e5df;
+      padding: 10px 20px;
+      color: #474745;
+      background: transparent;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f9f8f4;
+      color: black;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      background: linear-gradient(90deg, #ebeae6, #5e5d5b, #FFF8DC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tarifs, .avis {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      border: 1px solid #e8e7e0;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      background: rgba(99, 97, 97, 0.8);
+    }
+
+    .avis .card {
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #b3b1a7;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Digital Den Designs Studio</h1>
+    <a href="#contact">reserver un appel</a>
+  </header>
+
+  <!-- Landing Page -->
+  <section class="landing">
+    <h2>Digital Den Designs Studios</h2>
+    <button class="btn" onclick="scrollToSection('tarifs')">Réserver</button>
+  </section>
+
+  <!-- Tarifs -->
+  <section id="tarifs">
+    <h3>Tarifs</h3>
+    <div class="tarifs">
+      <div class="card">Site Vitrinne<br>À partir de 3500€</div>
+      <div class="card">Site Entreprise<br>À partir de 5600€</div>
+      <div class="card">Application<br>À partir de 10000€</div>
+      <div class="card">Entretien Site<br>À partir de 150€/mois</div>
+    </div>
+  </section>
+
+  <!-- Équipe -->
+  <section id="equipe">
+    <h3>Notre Équipe</h3>
+    <p>Chez Digital Den Design, nous sommes une équipe de codeurs et de designers passionnés et dévoués, toujours prêts à trouver la meilleure solution pour vous. Nous sommes des professionnels expérimentés qui partagent une passion pour la création de solutions numériques innovantes et de haute qualité.</p>
+  </section>
+
+  <!-- Avis -->
+  <section id="avis">
+    <h3>Avis Clients</h3>
+    <div class="avis">
+      <div class="card">⭐⭐⭐⭐⭐<br>“Excellent service !”</div>
+      <div class="card">⭐⭐⭐⭐⭐<br>“Rapide et efficace !”</div>
+      <div class="card">⭐⭐⭐⭐⭐<br>“Je recommande vivement !”</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>Téléphone : <strong>06 37 30 52 02</strong></p>
+    <p>Email : <strong>digitaldendesignsstudios@gmail.com</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Digital Den Designs Studios - Tous droits réservés
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({behavior: "smooth"});
+    }
+  </script>
+</body>
+</html>
+
